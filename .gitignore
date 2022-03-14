@@ -30,7 +30,7 @@ Thumbs.db
 
 # Applications
 *.app
-*.exe
+#*.exe
 *.war
 
 # Large media files
@@ -42,8 +42,8 @@ Thumbs.db
 *.wmv
 
 #Allure report
-#/%allure_result_folder%/
-#/allure-report/
+/%allure_result_folder%/*.*
+/allure-report/*.*
 
 #Screenshots
 /screenshots/
