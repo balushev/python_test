@@ -91,7 +91,7 @@ profile = {
                         b'RvgJsBi2_HqVBw1HIQOvEZTgBCeJNe8JA=='
         }
     },
-    'ArgentaInsurance_1': {
+    'ArgentaRunLCT_1': {
         'default': {
             'UI_URL': 'http://motor.argenta.project.s3-website-eu-west-1.amazonaws.com/omnichannel/standard-launcher/#/',
             'API_URL': 'http://20.33.40.95:13211/csc/insurance',
