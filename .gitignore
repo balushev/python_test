@@ -42,11 +42,10 @@ Thumbs.db
 *.wmv
 
 #Allure report
-#%allure_result_folder%/**
-#allure-report/**
+allure-reports/**
 
 #Screenshots
-#screenshots/**
+screenshots/**
 
 #Pycharm
 /.idea/
