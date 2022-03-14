@@ -137,7 +137,7 @@ Feature: Create Offer
 #    * Verify Offer congratulations message contains "Your proposition with number" text
 
 
-#  @new
+  @new
   Scenario Template: Create a Offer for Car insurance (Add Old timer)
   """ This UI scenario testing creation of a offer for Car insurance (Add Old timer) """
 
