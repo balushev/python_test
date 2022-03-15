@@ -34,7 +34,7 @@ Feature: Create Quote
       | Home insurance | Lamxxxxxxx     | peugeot     | 3008         | Passenger car | 09/09/2021   | 5             | CA1111CA           | 11183765      | Normal Plate     | Electric | Private   | 30000        | 5000                 | Accident    | 08/08/2018 | 0 percent      | Primary         | 08/08/1980             | Yes            | 3000        | No                     | 12/02/2019        | B                     | No           | Own damage comfort | Direct credit | Annual           | 13                | 5                   |
 
 
-#  @In_test @new
+  @sanity_check
   Scenario Template: Create a Quote for Home insurance (Family)
   """ This UI scenario testing creation of a quote for Home insurance (Family) """
 

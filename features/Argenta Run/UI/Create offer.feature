@@ -32,7 +32,7 @@ Feature: Create Offer
     * Choose By questions for Add home => Risk evaluation page => "Evaluation method" options area
 
 
-#  @new
+  @nightly_run
   Scenario: Create a Offer for Home insurance (Add Family)
   """ This UI scenario testing creation of a offer for Home insurance (Add Family) """
 
