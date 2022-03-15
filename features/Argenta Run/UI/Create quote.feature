@@ -145,7 +145,7 @@ Feature: Create Quote
 #    * Wait for Offer congratulations message
 #    * Verify Offer congratulations message contains "Your proposition with number" text
 
-#  @In_test @new
+  @In_test @new
   Scenario Template: Create a Quote for Car insurance (Add Car)
   """ This UI scenario testing creation of a quote for Car insurance (Add Car) """
 

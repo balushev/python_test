@@ -66,7 +66,7 @@ Feature: Create Offer
     * Choose By questions for Add Family => Add Home => Risk evaluation page => "Evaluation method" options area
 
 
-#  @new
+  @new
   Scenario: Create a Offer for Car insurance (Add Car)
   """ This UI scenario testing creation of a offer for Car insurance (Add Car) """
 
@@ -204,9 +204,9 @@ Feature: Create Offer
 #    * Verify Offer congratulations message contains <verifyCongratulationsMessage> text
 
     Scenarios: Test data for Offer -> Car insurance (Add Old timer)
-      | ownerFirstName | vehicleMake | vehicleModel | vehicleVersion | vehicleType           | vehiclePower | firstUseDate | numberOfSeats | registrationNumber | chassisNumber | registrationType | fuelType | usageType | claimNature | claimDate  | claimLiability | claimDriverType | claimDriverDateOfBirth | claimJokerUsed | claimAmount | claimRiskFullyRepaired | licenseID | driverLicenseDate | driverLicenseCategory | certificates | coverageTariffs       | billingType   | billingFrequency | billingRenewalDay | billingRenewalMonth |verifyCongratulationsMessage|
-      | Lamxxxxxxx     | Rolls Royce | Phantom      | 5              | Old timer private car | 100          | 09/09/1990   | 5             | O1111CA            | 11183765      | Normal Plate     | Electric | Private   | Accident    | 08/08/2018 | 0 percent      | Primary         | 08/08/1980             | Yes            | 3000        | No                     | 74898744  | 12/02/2019        | B                     | No           | Legal assistance safe | Direct credit | Annual           | 13                | 5                   |Your proposition with number|
-      | Lamxxxxxxx     | Jaguar      | E-Type       | do not execute | Old timer private car | 100          | 09/09/1990   | 5             | O1111CA            | 11183765      | Normal Plate     | Electric | Private   | Accident    | 08/08/2018 | 0 percent      | Primary         | 08/08/1980             | Yes            | 3000        | No                     | 74898744  | 12/02/2019        | B                     | No           | Legal assistance safe | Direct credit | Annual           | 13                | 5                   |some text                   |
+      | ownerFirstName | vehicleMake | vehicleModel | vehicleVersion | vehicleType           | vehiclePower | firstUseDate | numberOfSeats | registrationNumber | chassisNumber | registrationType | fuelType | usageType | claimNature | claimDate  | claimLiability | claimDriverType | claimDriverDateOfBirth | claimJokerUsed | claimAmount | claimRiskFullyRepaired | licenseID | driverLicenseDate | driverLicenseCategory | certificates | coverageTariffs       | billingType   | billingFrequency | billingRenewalDay | billingRenewalMonth | verifyCongratulationsMessage |
+      | Lamxxxxxxx     | Rolls Royce | Phantom      | 5              | Old timer private car | 100          | 09/09/1990   | 5             | O1111CA            | 11183765      | Normal Plate     | Electric | Private   | Accident    | 08/08/2018 | 0 percent      | Primary         | 08/08/1980             | Yes            | 3000        | No                     | 74898744  | 12/02/2019        | B                     | No           | Legal assistance safe | Direct credit | Annual           | 13                | 5                   | Your proposition with number |
+      | Lamxxxxxxx     | Jaguar      | E-Type       | do not execute | Old timer private car | 100          | 09/09/1990   | 5             | O1111CA            | 11183765      | Normal Plate     | Electric | Private   | Accident    | 08/08/2018 | 0 percent      | Primary         | 08/08/1980             | Yes            | 3000        | No                     | 74898744  | 12/02/2019        | B                     | No           | Legal assistance safe | Direct credit | Annual           | 13                | 5                   | some text                    |
 
 
 #  @new

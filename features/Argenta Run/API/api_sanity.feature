@@ -1,7 +1,7 @@
 Feature: Create Quote with API
 """ This feature contains all scenarios for quote creation using APIs """
 
-  @new
+#  @new
   Scenario: Create a Quote for Home insurance with API (Home) - no UI
   """ This UI scenario testing creation of a quote for Home insurance with API (Home) """
 
