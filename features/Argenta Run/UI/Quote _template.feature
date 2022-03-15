@@ -1,7 +1,7 @@
 Feature: Create Quote
 """ This feature contains all scenarios for quote creation """
 
-  @new
+#  @new
   Scenario Template: Create a Quote for Car insurance (Add Car)
   """ This UI scenario testing creation of a quote for Car insurance (Add Car) """
 

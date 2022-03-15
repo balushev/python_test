@@ -1,7 +1,7 @@
 Feature: Create Documents
 """ This feature contains all scenarios for documents creation """
 
-  @new
+#  @new
   Scenario: Create a Documents for Home insurance (Add Home)
   """ This UI scenario testing creation of a documents for Home insurance (Add Home) """
 
