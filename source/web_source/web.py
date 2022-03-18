@@ -479,19 +479,20 @@ class Web(object):
             raise Exception('Unsupported position!')
 
     # ================================== Switch to iframe method ==================================
-    def switch_to_iframe(self, iframe: str, method: str = 'CSS') -> None:
+    def switch_to_iframe(self, locator: str, vendor: str = '', list_index: int = 0, method: str = 'CSS') -> None:
         """ switch_to_iframe method gives us an opportunity to switch to iframe
 
             Method parameters:
-              iframe -> contains the iframe locator
-              method -> contains the method which we will be using
+               locator -> contains the name of the locator
+               vendor -> contains the name of the vendor
+               list_index -> contains index when we fetch list element
+               method -> contains the method which will be used
 
             Return value -> None
 
         """
 
-        print(f"===> Switching to {iframe}")
-        frame = self.find_element(iframe, method)
+        frame = self.find_element(locator=locator, vendor=vendor, list_index=list_index, method=method)
         self._web_driver.switch_to.frame(frame)
 
     # =============================== Switch to default content method ===============================
@@ -503,7 +504,6 @@ class Web(object):
 
         """
 
-        print(f"===> Switching to default content")
         self._web_driver.switch_to.default_content()
 
     # ============================= Select dropdown option by text method =============================

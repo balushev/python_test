@@ -1,16 +1,20 @@
+@nightly_run
 Feature: Create Offer
 """ This feature contains all scenarios for offer creation """
 
-#  @new
+#  @test
   Scenario: Create a Offer for Home insurance (Add Home)
   """ This UI scenario testing creation of a offer for Home insurance (Add Home) """
 
     * Set resource name for locators Argenta Run => Offer => Home insurance
     * Log in to the application
+    * Switch to the iframe
+    * Choose Omnichannel for Application menu options area
+    * Choose English for language options area
     * Choose Home insurance for Offer drop-down menu
     * Select a distributor with id 3588
     * Click Search Person link
-    * Fill Lamxxxxxxx in Search owner page => "First name" field
+    * Fill 3083383 in Search owner page => "Client ID" field
     * Click Search Owner page => "Search" button
     * Click Referential first search result
     * Click "Risk" button
@@ -32,16 +36,19 @@ Feature: Create Offer
     * Choose By questions for Add home => Risk evaluation page => "Evaluation method" options area
 
 
-  @nightly_run
+#  @test
   Scenario: Create a Offer for Home insurance (Add Family)
   """ This UI scenario testing creation of a offer for Home insurance (Add Family) """
 
     * Set resource name for locators Argenta Run => Offer => Home insurance
     * Log in to the application
+    * Switch to the iframe
+    * Choose Omnichannel for Application menu options area
+    * Choose English for language options area
     * Choose Home insurance for Offer drop-down menu
     * Select a distributor with id 3588
     * Click Search Person link
-    * Fill Lamxxxxxxx in Search owner page => "First name" field
+    * Fill 3083383 in Search owner page => "Client ID" field
     * Click Search Owner page => "Search" button
     * Click Referential first search result
     * Click "Risk" button
@@ -50,6 +57,8 @@ Feature: Create Offer
     * Click Add family page => "OK" button
     * Click Add Family page => "Add Home" button
     * Click Add Family => Add home => Address page => "Next" button
+    * Switch to default content
+    * Switch to the iframe
     * Choose Apartment for Add Family => Add home => Home details page => "Type" options area
     * Choose Owner non occupant for Add Family => Add home => Home details page => "Usage" options area
     * Fill 1 in Add Family => Add home => Home details page => "Bedrooms" field
@@ -66,17 +75,20 @@ Feature: Create Offer
     * Choose By questions for Add Family => Add Home => Risk evaluation page => "Evaluation method" options area
 
 
-  @new
+#  @test
   Scenario: Create a Offer for Car insurance (Add Car)
   """ This UI scenario testing creation of a offer for Car insurance (Add Car) """
 
     * Set resource name for locators Argenta Run => Offer => Car insurance
     * Log in to the application
+    * Switch to the iframe
+    * Choose Omnichannel for Application menu options area
+    * Choose English for language options area
     * Choose Car insurance for Offer drop-down menu
     * Select a distributor with id 3588
     * Click Search Person link
-    * Fill Lamxxxxxxx in Person Search page => "First name" field
-    * Click Person Search page => "Search" button
+    * Fill 3083383 in Search owner page => "Client ID" field
+    * Click Search owner page => "Search" button
     * Click Referential first search result
     * Click "Risk" button
     * Click "Add Car" button
@@ -127,26 +139,29 @@ Feature: Create Offer
     * Click "Billing" button
     * Choose Direct credit for Billing page => "Type" options area
     * Choose Annual for Billing page => "Frequency" options area
-    * Fill 13 in Billing page => "Renewal day" field
-    * Fill 5 in Billing page => "Renewal month" field
+    * Fill 18 in Billing page => "Renewal day" field
+    * Fill 3 in Billing page => "Renewal month" field
     * Click "Risk acceptance" button
     * Click "Risk acceptance answer" button
     * Click "Summary" button
     * Click "Submission" button
-#    * Wait for Offer congratulations message
-#    * Verify Offer congratulations message contains "Your proposition with number" text
+    * Wait for Offer congratulations message
+    * Verify Offer congratulations message contains "Your proposition with number" text
 
 
-#  @new
+#  @test
   Scenario Template: Create a Offer for Car insurance (Add Old timer)
   """ This UI scenario testing creation of a offer for Car insurance (Add Old timer) """
 
     * Set resource name for locators Argenta Run => Offer => Car insurance
     * Log in to the application
+    * Switch to the iframe
+    * Choose Omnichannel for Application menu options area
+    * Choose English for language options area
     * Choose Car insurance for Offer drop-down menu
     * Select a distributor with id 3588
     * Click Search Person link
-    * Fill <ownerFirstName> in Search owner page => "First name" field
+    * Fill <ownerID> in Search owner page => "Client ID" field
     * Click Search Owner page => "Search" button
     * Click Referential first search result
     * Click "Risk" button
@@ -204,21 +219,24 @@ Feature: Create Offer
 #    * Verify Offer congratulations message contains <verifyCongratulationsMessage> text
 
     Scenarios: Test data for Offer -> Car insurance (Add Old timer)
-      | ownerFirstName | vehicleMake | vehicleModel | vehicleVersion | vehicleType           | vehiclePower | firstUseDate | numberOfSeats | registrationNumber | chassisNumber | registrationType | fuelType | usageType | claimNature | claimDate  | claimLiability | claimDriverType | claimDriverDateOfBirth | claimJokerUsed | claimAmount | claimRiskFullyRepaired | licenseID | driverLicenseDate | driverLicenseCategory | certificates | coverageTariffs       | billingType   | billingFrequency | billingRenewalDay | billingRenewalMonth | verifyCongratulationsMessage |
-      | Lamxxxxxxx     | Rolls Royce | Phantom      | 5              | Old timer private car | 100          | 09/09/1990   | 5             | O1111CA            | 11183765      | Normal Plate     | Electric | Private   | Accident    | 08/08/2018 | 0 percent      | Primary         | 08/08/1980             | Yes            | 3000        | No                     | 74898744  | 12/02/2019        | B                     | No           | Legal assistance safe | Direct credit | Annual           | 13                | 5                   | Your proposition with number |
-      | Lamxxxxxxx     | Jaguar      | E-Type       | do not execute | Old timer private car | 100          | 09/09/1990   | 5             | O1111CA            | 11183765      | Normal Plate     | Electric | Private   | Accident    | 08/08/2018 | 0 percent      | Primary         | 08/08/1980             | Yes            | 3000        | No                     | 74898744  | 12/02/2019        | B                     | No           | Legal assistance safe | Direct credit | Annual           | 13                | 5                   | some text                    |
+      | ownerID | vehicleMake | vehicleModel | vehicleVersion | vehicleType           | vehiclePower | firstUseDate | numberOfSeats | registrationNumber | chassisNumber | registrationType | fuelType | usageType | claimNature | claimDate  | claimLiability | claimDriverType | claimDriverDateOfBirth | claimJokerUsed | claimAmount | claimRiskFullyRepaired | licenseID | driverLicenseDate | driverLicenseCategory | certificates | coverageTariffs       | billingType   | billingFrequency | billingRenewalDay | billingRenewalMonth | verifyCongratulationsMessage |
+      | 3083383 | Rolls Royce | Phantom      | 5              | Old timer private car | 100          | 09/09/1990   | 5             | O1111CA            | 11183765      | Normal Plate     | Electric | Private   | Accident    | 08/08/2018 | 0 percent      | Primary         | 08/08/1980             | Yes            | 3000        | No                     | 74898744  | 12/02/2019        | B                     | No           | Legal assistance safe | Direct credit | Annual           | 18                | 3                   | Your proposition with number |
+      | 3083383 | Jaguar      | E-Type       | do not execute | Old timer private car | 100          | 09/09/1990   | 5             | O1111CA            | 11183765      | Normal Plate     | Electric | Private   | Accident    | 08/08/2018 | 0 percent      | Primary         | 08/08/1980             | Yes            | 3000        | No                     | 74898744  | 12/02/2019        | B                     | No           | Legal assistance safe | Direct credit | Annual           | 18                | 3                   | some text                    |
 
 
-#  @new
+#  @test
   Scenario Template: Create a Offer for Car insurance (Add Van)
   """ This UI scenario testing creation of a offer for Car insurance (Add Van) """
 
     * Set resource name for locators Argenta Run => Offer => Car insurance
     * Log in to the application
+    * Switch to the iframe
+    * Choose Omnichannel for Application menu options area
+    * Choose English for language options area
     * Choose Car insurance for Offer drop-down menu
     * Select a distributor with id 3588
     * Click Search Person link
-    * Fill <ownerFirstName> in Search owner page => "First name" field
+    * Fill <ownerID> in Search owner page => "Client ID" field
     * Click Search Owner page => "Search" button
     * Click Referential first search result
     * Click "Risk" button
@@ -228,11 +246,7 @@ Feature: Create Offer
     * Fill <vehicleModel> in Add van => Preferential vehicle search page => "Model" field
     * Click Add van => Preferential vehicle search page => "Search" button
     * Click Referential first search result
-    * Fill <vehicleMake> in Add van => Vehicle details page => "Make"  field
-    * Fill <vehicleModel> in Add van => Vehicle details page => "Model" field
-    * Fill <vehicleVersion> in Add van => Vehicle details page => "Version" field
     * Choose <vehicleType> for Add van => Vehicle details page => "Vehicle type" drop-down menu
-    * Fill <vehiclePower> in Add van => Vehicle details page => "Power" field
     * Fill <firstUseDate> in Add van => Vehicle details page => "First use date" field
     * Fill <numberOfSeats> in Add van => Vehicle details page => "Number of seats" field
     * Fill <registrationNumber> in Add van => Vehicle details page => "Registration number" field
@@ -241,6 +255,9 @@ Feature: Create Offer
     * Choose <fuelType> for Add van => Vehicle details page => "Fuel type" options area
     * Choose <usageType> for Add van => vehicle details page => "Usage type" options area
     * Click Add van => vehicle details page => "Next" button
+    * Fill <vehicleValue> in Add van => Risk evaluation page => "Vehicle value" field
+    * Fill <accessoriesEquipmentValue> in Add van => Risk evaluation page => "Accessories equipment value" field
+    * Click Add car => Risk evaluation page => "Next" button
     * Click Add van => Claim history page => "Add claim" button
     * Choose <claimNature> for Add van => Add claim page => "Nature" drop-down menu
     * Fill <claimDate> in Add van => Add claim page => "Date" field
@@ -277,24 +294,27 @@ Feature: Create Offer
     * Click "Risk acceptance answer" button
     * Click "Summary" button
     * Click "Submission" button
-#    * Wait for Offer congratulations message
-#    * Verify Offer congratulations message contains "Your proposition with number" text
+    * Wait for Offer congratulations message
+    * Verify Offer congratulations message contains "Your proposition with number" text
 
     Scenarios: Test data for Offer -> Car insurance (Add Van)
-      | ownerFirstName | vehicleMake | vehicleModel | vehicleVersion | vehicleType           | vehiclePower | firstUseDate | numberOfSeats | registrationNumber | chassisNumber | registrationType | fuelType | usageType | claimNature | claimDate  | claimLiability | claimDriverType | claimDriverDateOfBirth | claimJokerUsed | claimAmount | claimRiskFullyRepaired | licenseID | driverlicenseDate | driverlicenseCategory | certificates | coverageTariffs       | billingType   | billingFrequency | billingRenewalDay | billingRenewalMonth |
-      | Lamxxxxxxx     | Rolls Royce | Phantom      | 5              | Old timer private car | 100          | 09/09/1990   | 5             | O1111CA            | 11183765      | Normal Plate     | Electric | Private   | Accident    | 08/08/2018 | 0 percent      | Primary         | 08/08/1980             | Yes            | 3000        | No                     | 74898744  | 12/02/2019        | B                     | No           | Legal assistance safe | Direct credit | Annual           | 13                | 5                   |
+      | ownerID | vehicleMake | vehicleModel | vehicleType                          | firstUseDate | numberOfSeats | registrationNumber | chassisNumber | registrationType | fuelType | usageType | claimNature | claimDate  | claimLiability | claimDriverType | claimDriverDateOfBirth | claimJokerUsed | claimAmount | claimRiskFullyRepaired | licenseID | driverlicenseDate | driverlicenseCategory | certificates | coverageTariffs       | billingType   | billingFrequency | billingRenewalDay | billingRenewalMonth | vehicleValue | accessoriesEquipmentValue |
+      | 3083383 | Peugeot     | Traveller    | Station wagon or All-terrain vehicle | 09/09/1990   | 8             | O1111CA            | 11183765      | Normal Plate     | Electric | Private   | Accident    | 08/08/2018 | 0 percent      | Primary         | 08/08/1980             | Yes            | 3000        | No                     | 74898744  | 12/02/2019        | B                     | No           | Legal assistance safe | Direct credit | Annual           | 18                | 3                   | 45000        | 3500                      |
 
 
-#  @new
+#  @test
   Scenario Template: Create a Offer for Car insurance (Add Truck Camper)
   """ This UI scenario testing creation of a offer for Car insurance (Add Truck Camper) """
 
     * Set resource name for locators Argenta Run => Offer => Car insurance
     * Log in to the application
+    * Switch to the iframe
+    * Choose Omnichannel for Application menu options area
+    * Choose English for language options area
     * Choose Car insurance for Offer drop-down menu
     * Select a distributor with id 3588
     * Click Search Person link
-    * Fill <ownerFirstName> in Search owner page => "First name" field
+    * Fill <ownerID> in Search owner page => "Client ID" field
     * Click Search Owner page => "Search" button
     * Click Referential first search result
     * Click "Risk" button
@@ -350,24 +370,27 @@ Feature: Create Offer
     * Click "Risk acceptance answer" button
     * Click "Summary" button
     * Click "Submission" button
-#    * Wait for Offer congratulations message
-#    * Verify Offer congratulations message contains "Your proposition with number" text
+    * Wait for Offer congratulations message
+    * Verify Offer congratulations message contains "Your proposition with number" text
 
     Scenarios: Test data for Offer -> Car insurance (Add Truck Camper)
-      | ownerFirstName | vehicleMake   | vehicleModel   | vehicleType | vehiclePower | firstUseDate | numberOfSeats | registrationNumber | chassisNumber | registrationType | fuelType | usageType | vehicleValue | accessoriesEquipment | claimNature | claimDate  | claimLiability | claimDriverType | claimDriverDateOfBirth | claimJokerUsed | claimAmount | claimRiskFullyRepaired | licenseID | driverlicenseDate | driverlicenseCategory | certificates | coverageTariffs    | billingType   | billingFrequency | billingRenewalDay | billingRenewalMonth |
-      | Lamxxxxxxx     | Mercedes-Benz | Grand Canyon S | Camping car | 100          | 09/09/1990   | 5             | O1111CA            | 11183765      | Normal Plate     | Electric | Private   | 75000        | 7500                 | Accident    | 08/08/2018 | 0 percent      | Primary         | 08/08/1980             | Yes            | 3000        | No                     | 74898744  | 12/02/2019        | B                     | No           | Own damage comfort | Direct credit | Annual           | 13                | 5                   |
+      | ownerID | vehicleMake   | vehicleModel   | vehicleType | vehiclePower | firstUseDate | numberOfSeats | registrationNumber | chassisNumber | registrationType | fuelType | usageType | vehicleValue | accessoriesEquipment | claimNature | claimDate  | claimLiability | claimDriverType | claimDriverDateOfBirth | claimJokerUsed | claimAmount | claimRiskFullyRepaired | licenseID | driverlicenseDate | driverlicenseCategory | certificates | coverageTariffs    | billingType   | billingFrequency | billingRenewalDay | billingRenewalMonth |
+      | 3083383 | Mercedes-Benz | Grand Canyon S | Camping car | 100          | 09/09/1990   | 5             | O1111CA            | 11183765      | Normal Plate     | Electric | Private   | 75000        | 7500                 | Accident    | 08/08/2018 | 0 percent      | Primary         | 08/08/1980             | Yes            | 3000        | No                     | 74898744  | 12/02/2019        | B                     | No           | Own damage comfort | Direct credit | Annual           | 18                | 3                   |
 
 
-#  @new
+#  @test
   Scenario: Create a Offer for Family insurance
   """ This UI scenario testing creation of a offer for Family insurance """
 
     * Set resource name for locators Argenta Run => Offer => Family insurance
     * Log in to the application
+    * Switch to the iframe
+    * Choose Omnichannel for Application menu options area
+    * Choose English for language options area
     * Choose Family insurance for Offer drop-down menu
     * Select a distributor with id 3588
     * Click Search Person link
-    * Fill Lamxxxxxxx in Search owner page => "First name" field
+    * Fill 3083383 in Search owner page => "Client ID" field
     * Click Search Owner page => "Search" button
     * Click Referential first search result
     * Click "Risk" button
@@ -378,26 +401,29 @@ Feature: Create Offer
     * Click "Billing" button
     * Choose Direct credit for Billing page => "Type" options area
     * Choose Annual for Billing page => "Frequency" options area
-    * Fill 13 in Billing page => Renewal day field
-    * Fill 5 in Billing page => Renewal month field
+    * Fill 18 in Billing page => Renewal day field
+    * Fill 3 in Billing page => Renewal month field
     * Click "Risk acceptance" button
     * Click Add Family page => Risk acceptance answer => "No" button
     * Click "Summary" button
     * Click "Submission" button
-#    * Wait for Offer congratulations message
-#    * Verify Offer congratulations message contains "Your proposition with number" text
+    * Wait for Offer congratulations message
+    * Verify Offer congratulations message contains "Your proposition with number" text
 
 
-#  @new
+#  @test
   Scenario: Create a Offer for Motorcycle insurance (Add Motorcycle)
   """ This UI scenario testing creation of a offer for Motorcycle insurance (Add Motorcycle) """
 
     * Set resource name for locators Argenta Run => Offer => Motorcycle insurance
     * Log in to the application
+    * Switch to the iframe
+    * Choose Omnichannel for Application menu options area
+    * Choose English for language options area
     * Choose Motorcycle insurance for Offer drop-down menu
     * Select a distributor with id 3588
     * Click Search Person link
-    * Fill Lamxxxxxxx in Search owner page => "First name" field
+    * Fill 3083383 in Search owner page => "Client ID" field
     * Click Search Owner page => "Search" button
     * Click Referential first search result
     * Click "Risk" button
@@ -437,26 +463,29 @@ Feature: Create Offer
     * Click "Billing" button
     * Choose Direct credit for Billing page => "Type" options area
     * Choose Annual for Billing page => "Frequency" options area
-    * Fill 13 in Billing page => "Renewal day" field
+    * Fill 18 in Billing page => "Renewal day" field
     * Fill 3 in Billing page => "Renewal month" field
     * Click "Risk acceptance" button
     * Click Add motorcycle => Risk acceptance page => "Answer No" button
     * Click "Summary" button
     * Click "Submission" button
-#    * Wait for Offer congratulations message
-#    * Verify Offer congratulations message contains "Your proposition with number" text
+    * Wait for Offer congratulations message
+    * Verify Offer congratulations message contains "Your proposition with number" text
 
 
-#  @new
+#  @test
   Scenario: Create a Offer for Motorcycle insurance (Add Moped)
   """ This UI scenario testing creation of a offer for Motorcycle insurance (Add Moped) """
 
     * Set resource name for locators Argenta Run => Offer => Motorcycle insurance
     * Log in to the application
+    * Switch to the iframe
+    * Choose Omnichannel for Application menu options area
+    * Choose English for language options area
     * Choose Motorcycle insurance for Offer drop-down menu
     * Select a distributor with id 3588
     * Click Search Person link
-    * Fill Lamxxxxxxx in Search owner page => "First name" field
+    * Fill 3083383 in Search owner page => "Client ID" field
     * Click Search Owner page => "Search" button
     * Click Referential first search result
     * Click "Risk" button
@@ -496,11 +525,11 @@ Feature: Create Offer
     * Click "Billing" button
     * Choose Direct credit for Billing page => "Type" options area
     * Choose Annual for Billing page => "Frequency" options area
-    * Fill 13 in Billing page => Renewal day field
+    * Fill 18 in Billing page => Renewal day field
     * Fill 3 in Billing page => Renewal month field
     * Click "Risk acceptance" button
     * Click Add moped => Risk acceptance page => "Answer No" button
     * Click "Summary" button
     * Click "Submission" button
-#    * Wait for Offer congratulations message
-#    * Verify Offer congratulations message contains "Your proposition with number" text
+    * Wait for Offer congratulations message
+    * Verify Offer congratulations message contains "Your proposition with number" text

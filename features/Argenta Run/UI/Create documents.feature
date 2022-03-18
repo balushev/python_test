@@ -1,17 +1,20 @@
+@nightly_run
 Feature: Create Documents
 """ This feature contains all scenarios for documents creation """
 
-#  @new
+#  @test
   Scenario: Create a Documents for Home insurance (Add Home)
   """ This UI scenario testing creation of a documents for Home insurance (Add Home) """
 
     * Set resource name for locators Argenta Run => Documents => Home insurance
     * Log in to the application
-    * Pause
+    * Switch to the iframe
+    * Choose Omnichannel for Application menu options area
+    * Choose English for language options area
     * Choose Home insurance for Documents drop-down menu
 #    * Select a distributor with id 3588
 #    * Click Search Person link
-#    * Fill Lamxxxxxxx in search owner page "First name" field
+#    * Fill 3083383 in Search owner page => "Client ID" field
 #    * Click Search Owner page Search button
 #    * Click Referential first search result
 #    * Click Risk button

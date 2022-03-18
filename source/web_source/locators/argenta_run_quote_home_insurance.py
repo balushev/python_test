@@ -54,16 +54,21 @@ options_area_lists = {
                                                                'warehouse or stockroom'),
     'add_home_risk_evaluation_page_evaluation_method': ('gim', 'by questions', 'manual'),
     'add_family_add_home_risk_evaluation_page_evaluation_method': ('gim', 'by questions', 'manual'),
-    'add_family_page_family_situation': ('family', '60 plus', 'single')
+    'add_family_page_family_situation': ('family', '60 plus', 'single'),
+    'application_menu': ('dxc graphtalk', 'omnichannel', 'file exchange', 'scheduler', 'batch chain reports',
+                         'admin console', 'gt admin gateway', 'help', 'help sysops')
 }
 
 # ===================================================== Locators =====================================================
 
 
-# OmniChannel login page
-login_username = 'input#authUsername'
-login_password = 'input#authPassword'
-login_button = 'button#loginBtn'
+# GTAIA login page
+login_username = 'input#username'
+login_password = 'input#password'
+login_button = '#kc-login'
+
+# Application menu
+application_menu_options_tuple = '#overview>div.row>div:nth-of-type(@index@)'
 
 # Send to the back office page
 submit_documents_button = 'button#create-documents-button'

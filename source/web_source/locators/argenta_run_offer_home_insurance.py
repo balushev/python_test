@@ -53,15 +53,23 @@ options_area_lists = {
                                                                'warehouse or stockroom'),
     'add_home_risk_evaluation_page_evaluation_method': ('gim', 'by questions', 'manual'),
     'add_family_add_home_risk_evaluation_page_evaluation_method': ('gim', 'by questions', 'manual'),
-    'add_family_page_family_situation': ('family', '60 plus', 'single')
+    'add_family_page_family_situation': ('family', '60 plus', 'single'),
+    'application_menu': ('', 'dxc graphtalk', 'omnichannel', 'file exchange', 'scheduler', 'batch chain reports',
+                         'admin console', 'gt admin gateway', 'help', 'help sysops'),
+    'language': ('english', 'dutch', 'french')
 }
 
 # ===================================================== Locators =====================================================
 
-# OmniChannel login page
-login_username = 'input#authUsername'
-login_password = 'input#authPassword'
-login_button = 'button#loginBtn'
+# GTAIA login page
+login_username = 'input#username'
+login_password = 'input#password'
+login_button = '#kc-login'
+
+# Application menu
+iframe = '#iframe'
+application_menu_options_tuple = '#overview>div.row>div:nth-of-type(@index@)'
+language_options_tuple = '#oc-language-option-@index@'
 
 # Send to the back office page
 submit_documents_button = 'button#create-documents-button'
@@ -120,8 +128,8 @@ add_home_home_details_page_usage_options_tuple = (
     'button[id="quote-risk-dwelling-usage-type-toggle_Tenant of a part of Building_-button"]'
 )
 
-add_home_home_details_page_bedrooms_input = 'input#mat-input-18'
-add_home_home_details_page_bathrooms_input = 'input#mat-input-19'
+add_home_home_details_page_bedrooms_input = 'input#mat-input-29'
+add_home_home_details_page_bathrooms_input = 'input#mat-input-30'
 
 add_home_home_details_page_alarm_system_options_tuple = (
     'button[id="quote-risk-dwelling-alarm-system-toggle_Certified system_-button"]',
@@ -215,8 +223,8 @@ add_family_add_home_home_details_page_usage_options_tuple = (
     'button[id="quote-risk-dwelling-usage-type-toggle_Tenant of a part of Building_-button"]'
 )
 
-add_family_add_home_home_details_page_bedrooms_input = 'input#mat-input-22'
-add_family_add_home_home_details_page_bathrooms_input = 'input#mat-input-23'
+add_family_add_home_home_details_page_bedrooms_input = 'input#mat-input-33'
+add_family_add_home_home_details_page_bathrooms_input = 'input#mat-input-34'
 
 add_family_add_home_home_details_page_alarm_system_options_tuple = (
     'button[id="quote-risk-dwelling-alarm-system-toggle_Certified system_-button"]',

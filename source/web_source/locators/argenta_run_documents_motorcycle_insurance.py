@@ -45,15 +45,23 @@ options_area_lists = {
     'add_moped_coverage_tariffs_page_coverages': ('civil liability', 'free assistance',
                                                   'legal assistance basis', 'legal assistance safe'),
     'add_motorcycle_add_claim_page_risk_fully_repaired': ('no', 'yes'),
-    'add_moped_add_claim_page_risk_fully_repaired': ('no', 'yes')
+    'add_moped_add_claim_page_risk_fully_repaired': ('no', 'yes'),
+    'application_menu': ('', 'dxc graphtalk', 'omnichannel', 'file exchange', 'scheduler', 'batch chain reports',
+                         'admin console', 'gt admin gateway', 'help', 'help sysops'),
+    'language': ('english', 'dutch', 'french')
 }
 
 # ===================================================== Locators =====================================================
 
-# OmniChannel login page
-login_username = 'input#authUsername'
-login_password = 'input#authPassword'
-login_button = 'button#loginBtn'
+# GTAIA login page
+login_username = 'input#username'
+login_password = 'input#password'
+login_button = '#kc-login'
+
+# Application menu
+iframe = '#iframe'
+application_menu_options_tuple = '#overview>div.row>div:nth-of-type(@index@)'
+language_options_tuple = '#oc-language-option-@index@'
 
 # Send to the back office page
 submit_documents_button = 'button#create-documents-button'
@@ -81,12 +89,12 @@ search_person_link = 'a#person-search-undefined-anchor'
 search_organization_link = 'a#organization-search-undefined-anchor'
 
 
-person_search_page_first_name_input = 'input#person-search-first-name-text'
-person_search_page_last_name_input = 'input#person-search-last-name-text'
-person_search_page_client_id_input = 'input#person-search-client-identifier-text'
-person_search_page_date_of_birth_input = 'input#person-search-client-date-date_input'
-person_search_page_search_button = 'button#btnfilter'
-person_search_page_reset_button = 'button#btnreset'
+search_owner_page_first_name_input = 'input#person-search-first-name-text'
+search_owner_page_last_name_input = 'input#person-search-last-name-text'
+search_owner_page_client_id_input = 'input#person-search-client-identifier-text'
+search_owner_page_date_of_birth_input = 'input#person-search-client-date-date_input'
+search_owner_page_search_button = 'button#btnfilter'
+search_owner_page_reset_button = 'button#btnreset'
 
 referential_first_search_result = '#_0'
 risk_button = 'button#risk-management-undefined-button'

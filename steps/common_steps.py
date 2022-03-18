@@ -184,3 +184,17 @@ def step_impl(context: object) -> None:
     else:
         raise Exception('First, you need to start recording !!!')
 
+
+@step(u'Switch to the {iframe}')
+def step_impl(context: object, iframe: str) -> None:
+    context.web.verify_element_not_present(locator='loading_page_element')
+
+    context.web.switch_to_iframe(locator=iframe)
+
+
+@step(u'Switch to default content')
+def step_impl(context: object) -> None:
+    context.web.verify_element_not_present(locator='loading_page_element')
+
+    context.web.switch_to_default_content()
+

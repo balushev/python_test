@@ -83,15 +83,20 @@ options_area_lists = {
                                                'own damage comfort', 'driver plus', 'legal assistance safe'),
     'add_old_timer_coverage_tariffs_page': ('civil liability', 'free assistance', 'legal assistance safe'),
     'billing_page_type': ('direct credit', 'direct debit'),
-    'billing_page_frequency': ('monthly', 'quarterly', 'semi annual', 'annual')
+    'billing_page_frequency': ('monthly', 'quarterly', 'semi annual', 'annual'),
+    'application_menu': ('dxc graphtalk', 'omnichannel', 'file exchange', 'scheduler', 'batch chain reports',
+                         'admin console', 'gt admin gateway', 'help', 'help sysops')
 }
 
 # ===================================================== Locators =====================================================
 
-# OmniChannel login page
-login_username = 'input#authUsername'
-login_password = 'input#authPassword'
-login_button = 'button#loginBtn'
+# GTAIA login page
+login_username = 'input#username'
+login_password = 'input#password'
+login_button = '#kc-login'
+
+# Application menu
+application_menu_options_tuple = '#overview>div.row>div:nth-of-type(@index@)'
 
 # Send to the back office page
 submit_documents_button = 'button#create-documents-button'

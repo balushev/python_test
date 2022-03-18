@@ -45,15 +45,20 @@ options_area_lists = {
     'add_moped_coverage_tariffs_page_coverages': ('civil liability', 'free assistance',
                                                   'legal assistance basis', 'legal assistance safe'),
     'add_motorcycle_add_claim_page_risk_fully_repaired': ('no', 'yes'),
-    'add_moped_add_claim_page_risk_fully_repaired': ('no', 'yes')
+    'add_moped_add_claim_page_risk_fully_repaired': ('no', 'yes'),
+    'application_menu': ('dxc graphtalk', 'omnichannel', 'file exchange', 'scheduler', 'batch chain reports',
+                         'admin console', 'gt admin gateway', 'help', 'help sysops')
 }
 
 # ===================================================== Locators =====================================================
 
-# OmniChannel login page
-login_username = 'input#authUsername'
-login_password = 'input#authPassword'
-login_button = 'button#loginBtn'
+# GTAIA login page
+login_username = 'input#username'
+login_password = 'input#password'
+login_button = '#kc-login'
+
+# Application menu
+application_menu_options_tuple = '#overview>div.row>div:nth-of-type(@index@)'
 
 # Send to the back office page
 submit_documents_button = 'button#create-documents-button'
