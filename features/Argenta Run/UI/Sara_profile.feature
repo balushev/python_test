@@ -1,4 +1,4 @@
-Feature: Create Quote
+Feature: profile 1
 """ This feature contains all scenarios for quote creation """
 
 #  @test
@@ -10,7 +10,7 @@ Feature: Create Quote
     * Switch to the iframe
     * Choose Omnichannel for Application menu options area
     * Choose English for language options area
-    * Choose <quoteInsurance> for Quote drop-down menu
+    * Choose Car insurance for Quote drop-down menu
     * Select a distributor with id 3588
     * Click "Search Owner" button
     * Fill <clientID> in Search owner page => "Client ID" field
@@ -35,7 +35,7 @@ Feature: Create Quote
     * Fill <vehicleValue> in Add car => Risk evaluation page => "Vehicle value" field
     * Fill <accessoriesEquipment> in Add car => Risk evaluation page => "Accessories equipment value" field
     * Click Add car => Risk evaluation page => "Next" button
-    * Click <addClaimButton>
+    * Click <addClaimButton> button
     * Choose <claimNature> for Add car => Add claim page => "Nature" drop-down menu
     * Fill <claimDate> in Add car => Add claim page => "Date" field
     * Choose <claimLiability> for Add car => Add claim page => "Liability" drop-down menu
@@ -44,7 +44,7 @@ Feature: Create Quote
     * Choose <claimJokerUsed> for Add car => Add claim page => "Joker used" options area
     * Fill <claimAmount> in Add car => Add claim page => "Amount" field
     * Choose <claimRiskFullyRepaired> for Add car => Add claim page => "Risk fully repaired" options area
-    * Click Add car => Add claim page => "OK" button
+    * Click <addClaimPageOKButton> button
     * Click Add car => Claim history page => "Next" button
     * Click Add car => Drivers page => "Add Driver" button
     * Click Add car => Add driver page => "Next" button
@@ -68,14 +68,20 @@ Feature: Create Quote
     * Click "Risk" button
     * Click  "Coverage tariffs" button
     * Choose <tariffAdjustment> for Add car => Add claim page => "Risk fully repaired" options area
-    * Click "Save Quote" button
-    * Click "Submit to offer" button
+    * Click "Billing" button
+    * Click "Risk acceptance" button
+    * Click "Risk acceptance answer" button
+    * Click "Summary" button
+    * Click "Submission" button
+#    * Click "Save Quote" button
+#    * Click "Submit to offer" button
 
 
     Scenarios: Test data for Car insurance (Car)
-      | quoteInsurance | clientID | vehicleMake | vehicleModel | vehicleType   | firstUseDate | numberOfSeats | registrationNumber | chassisNumber  | registrationType | fuelType   | usageType | vehicleValue | accessoriesEquipment | claimNature | claimDate  | claimLiability | claimDriverType | claimDriverDateOfBirth | claimJokerUsed | claimAmount | claimRiskFullyRepaired | driverlicenseDate | driverlicenseCategory | certificates | commissionPercentage | coverageTariffs1 | coverageTariffs2 | coverageTariffs3 | coverageTariffs4 | billingType    | billingFrequency | billingRenewalDay | billingRenewalMonth | tariffAdjustment | addClaimButton                                      |
-      | Car insurance  | 3083383  | peugeot     | 3008         | Passenger car | 01/01/2020   | 5             | AA1234BB           | do not execute | Normal Plate     | Diesel oil | Private   | 149600       | do not execute       | Fire        | 08/08/2018 | 100 percent    | Primary         | 08/08/1980             | do not execute | 1530        | do not execute         | 11/05/2007        | B                     | No           | 10.0%                | Partial omnium   | do not execute   | do not execute   | do not execute   | do not execute | do not execute   | do not execute    | do not execute      |                  | Add car => Claim history page => "Add Claim" button |
-#      | Car            | 4732212   | honda       | jazz         | Passenger car | 01/01/2020   | 5             | AA1234BB           | do not execute | Normal Plate     | Essence    | Private   | 1496694      | do not execute       | do not execute | do not execute | do not execute | Primary         | do not execute         | do not execute | do not execute | No                     | 11/05/2007        | B                     | No           | 10%                  | Omnium partial   | do not execute   | do not execute   | do not execute   | do not execute | do not execute   | do not execute    | do not execute      |                  |
-#      | Car insurance  | Lamxxxxxxx | citroen     | jumper       | Minibus       | 09/09/2021   | 5             | CO13CA             | 46748gh7       | Trader plate     | Diesel oil | Professional | 50000        | 0                    | Fire           | 08/08/2018     | 100 percent    | Secondary       | 08/08/1980             | No             | 1530           | Yes                    | 12/02/2019        | BE                    | No           | Driver plus          | Direct credit    | semi annual      | 10               | 3                | do not execute | do not execute   | do not execute    | do not execute      ||
-
-
+      | clientID | vehicleMake | vehicleModel | vehicleType   | firstUseDate | numberOfSeats | registrationNumber | chassisNumber  | registrationType | fuelType   | usageType | vehicleValue   | accessoriesEquipment | claimNature    | claimDate      | claimLiability | claimDriverType | claimDriverDateOfBirth | claimJokerUsed | claimAmount    | claimRiskFullyRepaired | driverlicenseDate | driverlicenseCategory | certificates | commissionPercentage | coverageTariffs1 | coverageTariffs2 | coverageTariffs3      | coverageTariffs4 | billingType  | billingFrequency | billingRenewalDay | billingRenewalMonth | tariffAdjustment | addClaimButton | addClaimPageOKButton |
+      | 3083383  | AUDI        | A3           | Passenger car | 07/01/2022   | 5             | SA123RA            | do not execute | Normal Plate     | Diesel oil | Private   | do not execute | 2000                 | do not execute | do not execute | do not execute | do not execute  | do not execute         | do not execute | do not execute | do not execute         | 01/01/2019        | B                     | No           | 10.0%                | Partial omnium   | Own damage Basic | Legal assistance safe | do not execute   | Direct Debit | Annual           | do not execute    | do not execute      | do not execute   | do not execute | do not execute       |
+#      | 3083383  | AUDI        | A3           | Passenger car | 07/01/2022   | 5             | SA123RA            | do not execute | Normal Plate     | Diesel oil | Private   | do not execute | 2000                 | do not execute | do not execute | do not execute | do not execute  | do not execute         | do not execute | do not execute | do not execute         | 01/01/2019        | B                     | No           | 10.0%                | Partial omnium   | Own damage Basic | Legal assistance safe | do not execute   | Direct Debit | Annual           | do not execute    | do not execute      |                  | Add car => Claim history page => "Add Claim" |Add car => Add claim page => "OK"|
+     
+      
+      
+      

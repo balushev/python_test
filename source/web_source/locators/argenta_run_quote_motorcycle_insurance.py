@@ -46,8 +46,9 @@ options_area_lists = {
                                                   'legal assistance basis', 'legal assistance safe'),
     'add_motorcycle_add_claim_page_risk_fully_repaired': ('no', 'yes'),
     'add_moped_add_claim_page_risk_fully_repaired': ('no', 'yes'),
-    'application_menu': ('dxc graphtalk', 'omnichannel', 'file exchange', 'scheduler', 'batch chain reports',
-                         'admin console', 'gt admin gateway', 'help', 'help sysops')
+    'application_menu': ('', 'dxc graphtalk', 'omnichannel', 'file exchange', 'scheduler', 'batch chain reports',
+                         'admin console', 'gt admin gateway', 'help', 'help sysops'),
+    'language': ('english', 'dutch', 'french')
 }
 
 # ===================================================== Locators =====================================================
@@ -58,7 +59,9 @@ login_password = 'input#password'
 login_button = '#kc-login'
 
 # Application menu
+iframe = '#iframe'
 application_menu_options_tuple = '#overview>div.row>div:nth-of-type(@index@)'
+language_options_tuple = '#oc-language-option-@index@'
 
 # Send to the back office page
 submit_documents_button = 'button#create-documents-button'

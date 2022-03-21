@@ -349,7 +349,7 @@ add_old_timer_risk_background_page_next_certificates_button = 'a#undefined-8-anc
 billing_page_billing_renewal_day_input = 'input#billing-billing-main-due-day-text'
 billing_page_billing_renewal_month_input = 'input#billing-billing-main-due-month-text'
 
-# Van
+# Add Van
 add_van_vehicle_details_page_referential_vehicle_search_button = add_car_vehicle_details_page_referential_vehicle_search_button
 add_van_preferential_vehicle_search_page_make_input = add_car_preferential_vehicle_search_page_make_input
 add_van_preferential_vehicle_search_page_model_input = add_car_preferential_vehicle_search_page_model_input

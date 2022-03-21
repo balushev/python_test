@@ -12,27 +12,3 @@ Feature: Create Documents
     * Choose Omnichannel for Application menu options area
     * Choose English for language options area
     * Choose Home insurance for Documents drop-down menu
-#    * Select a distributor with id 3588
-#    * Click Search Person link
-#    * Fill 3083383 in Search owner page => "Client ID" field
-#    * Click Search Owner page Search button
-#    * Click Referential first search result
-#    * Click Risk button
-#    * Pause
-#    * Click Add Home button
-#    * Click Add home => Address page => Next button
-#    * Choose Apartment for Add home => Home details page => Type options area
-#    * Choose Owner non occupant for Add home => Home details page => Usage options area
-#    * Fill 1 in Offer => Add home => Home details page => Bedrooms field
-#    * Fill 1 in Offer => Add home => Home details page => Bathrooms field
-#    * Choose No for Offer => Add home => Home details page => Alarm system options area
-#    * Choose No for Offer => Add home => Home details page => Classified property options area
-#    * Choose Closed for Offer => Add home => Home details page => Abutment options area
-#    * Choose before 1995 for Offer => Add home => Home details page => Building year drop-down menu
-#    * Choose Habitation only for Offer => Add home => Home details page => Habitation usage options area
-#    * Choose No for Offer => Add home => Home details page => Irregular habitation options area
-#    * Choose No for Offer => Add home => Home details page => Flammable construction options area
-#    * Click Offer => Add home => Home details page => Next button
-#    * Click Offer => Add home => Equipment page => Next button
-#    * Choose By questions for Offer => Add Home => Risk evaluation page => Evaluation method options area
-

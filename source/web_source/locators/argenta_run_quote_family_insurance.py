@@ -25,8 +25,9 @@ options_area_lists = {
     'add_family_add_home_risk_evaluation_page_evaluation_method': ('gim', 'by questions', 'manual'),
     'billing_page_type': ('direct credit', 'direct debit'),
     'billing_page_frequency': ('monthly', 'quarterly', 'semi annual', 'annual'),
-    'application_menu': ('dxc graphtalk', 'omnichannel', 'file exchange', 'scheduler', 'batch chain reports',
-                         'admin console', 'gt admin gateway', 'help', 'help sysops')
+    'application_menu': ('', 'dxc graphtalk', 'omnichannel', 'file exchange', 'scheduler', 'batch chain reports',
+                         'admin console', 'gt admin gateway', 'help', 'help sysops'),
+    'language': ('english', 'dutch', 'french')
 }
 
 # ===================================================== Locators =====================================================
@@ -37,7 +38,9 @@ login_password = 'input#password'
 login_button = '#kc-login'
 
 # Application menu
+iframe = '#iframe'
 application_menu_options_tuple = '#overview>div.row>div:nth-of-type(@index@)'
+language_options_tuple = '#oc-language-option-@index@'
 
 # Send to the back office page
 submit_documents_button = 'button#create-documents-button'

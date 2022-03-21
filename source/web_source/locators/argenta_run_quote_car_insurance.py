@@ -15,14 +15,17 @@ loading_page_element = '.loadingDiv'
 
 # Dictionary which contains all dropdowns values
 dropdown_lists = {
-    'add_car_vehicle_details_page_vehicle_type': ('minibus', 'passenger car', 'station wagon or all terrain vehicle'),
     'quote': ('home insurance', 'car insurance', 'family insurance', 'motorcycle insurance'),
+    'add_car_vehicle_details_page_vehicle_type': ('minibus', 'passenger car', 'station wagon or all terrain vehicle'),
+    'add_van_vehicle_details_page_vehicle_type': ('station wagon or all-terrain vehicle', 'truck'),
+    'add_old_timer_vehicle_details_page_vehicle_type': ('old timer private car',),
+    'add_truck_camper_vehicle_details_page_vehicle_type': ('camping car',),
     'add_car_add_claim_page_nature': ('accident', 'corporal claim', 'damage to third', 'fire', 'glass breakage',
                                       'material claim', 'other', 'parking', 'theft'),
     'add_old_timer_add_claim_page_nature': ('accident', 'corporal claim', 'damage to third', 'fire', 'glass breakage',
                                             'material claim', 'other', 'parking', 'theft'),
-    'add_van_timer_add_claim_page_nature': ('accident', 'corporal claim', 'damage to third', 'fire', 'glass breakage',
-                                            'material claim', 'other', 'parking', 'theft'),
+    'add_van_add_claim_page_nature': ('accident', 'corporal claim', 'damage to third', 'fire', 'glass breakage',
+                                      'material claim', 'other', 'parking', 'theft'),
     'add_truck_camper_add_claim_page_nature': ('accident', 'corporal claim', 'damage to third', 'fire', 'glass breakage',
                                                'material claim', 'other', 'parking', 'theft'),
     'add_car_add_claim_page_liability': ('0 percent', '50 percent', '100 percent'),
@@ -33,7 +36,6 @@ dropdown_lists = {
     'add_old_timer_add_claim_page_driver_type': ('primary', 'secondary', 'occasional'),
     'add_van_add_claim_page_driver_type': ('primary', 'secondary', 'occasional'),
     'add_truck_camper_add_claim_page_driver_type': ('primary', 'secondary', 'occasional'),
-    'add_old_timer_vehicle_details_page_vehicle_type': ('old timer private car',),
     'add_truck_camper_page_vehicle_type': ('camping car',),
     'add_car_risk_page_branch_owner': ('0.0%', '0.5%', '1.0%', '1.5%', '2.0%', '2.5%', '3.0%', '3.5%', '4.0%', '4.5%',
                                        '5.0%', '5.5%', '6.0%', '6.5%', '7.0%', '7.5%', '8.0%', '8.5%', '9.0%', '9.5%',
@@ -46,6 +48,8 @@ options_area_lists = {
                                                        'transit plate'),
     'add_old_timer_vehicle_details_page_registration_type': ('euro plate', 'normal plate', 'bz plate', 'trader plate',
                                                              'transit plate'),
+    'add_van_vehicle_details_page_registration_type': ('euro plate', 'normal plate', 'bz plate', 'trader plate',
+                                                       'transit plate'),
     'add_truck_camper_page_registration_type': ('euro plate', 'normal plate', 'bz plate', 'trader plate', 'transit plate'),
     'add_car_vehicle_details_page_fuel_type': ('bio ethanol', 'diesel oil', 'electric',
                                                'hybrid / micro hybrid diesel oil', 'hybrid / micro hybrid petrol',
@@ -55,9 +59,14 @@ options_area_lists = {
                                                      'hybrid / micro hybrid diesel oil', 'hybrid / micro hybrid petrol',
                                                      'lpg', 'natural gas for vehicles', 'petrol',
                                                      'plug-in hybrid diesel oil', 'plug-in hybrid petrol'),
+    'add_van_vehicle_details_page_fuel_type': ('diesel oil', 'electric', 'hybrid (diesel oil / electricity)',
+                                               'hybrid (petrol / electricity)','hydrogen', 'lpg',
+                                               'natural gas for vehicles', 'petrol', 'unknown'),
     'add_truck_camper_page_fuel_type': ('diesel oil', 'electric', 'natural gas for vehicles', 'petrol'),
     'add_car_vehicle_details_page_usage_type': ('private', 'professional'),
     'add_old_timer_vehicle_details_page_usage_type': ('private', 'professional'),
+    'add_van_vehicle_details_page_usage_type': ('business rounds', 'craftsman', 'private', 'private - Business Journeys',
+                                                'taxi', 'transport of goods', 'professional'),
     'add_truck_camper_page_usage_type': ('professional', 'private'),
     'add_car_add_claim_page_joker_used': ('no', 'yes'),
     'add_old_timer_add_claim_page_joker_used': ('no', 'yes'),
@@ -75,17 +84,22 @@ options_area_lists = {
                                                                 'd', 'de', 'd1', 'd1e'),
     'add_old_timer_add_driver_driver_license_page_license_category': ('b', 'be', 'c', 'ce', 'c1', 'c1e',
                                                                       'd', 'de', 'd1', 'd1e'),
+    'add_van_add_driver_driver_license_page_license_category': ('b', 'be', 'c', 'ce', 'c1', 'c1e',
+                                                                'd', 'de', 'd1', 'd1e'),
     'add_truck_camper_add_driver_driver_license_page_license_category': ('b', 'be', 'c', 'ce', 'c1', 'c1e',
                                                                          'd', 'de', 'd1', 'd1e'),
     'add_car_coverage_tariffs_page': ('partial omnium', 'own damage basic', 'own damage comfort', 'driver plus',
                                       'legal assistance safe', 'tmc insured'),
     'add_truck_camper_coverage_tariffs_page': ('civil liability', 'partial omnium', 'own damage basic',
                                                'own damage comfort', 'driver plus', 'legal assistance safe'),
+    'add_van_coverage_tariffs_page': ('civil liability', 'partial omnium', 'own damage basic', 'own damage comfort',
+                                      'driver plus', 'legal assistance safe', 'tmc insured'),
     'add_old_timer_coverage_tariffs_page': ('civil liability', 'free assistance', 'legal assistance safe'),
     'billing_page_type': ('direct credit', 'direct debit'),
     'billing_page_frequency': ('monthly', 'quarterly', 'semi annual', 'annual'),
-    'application_menu': ('dxc graphtalk', 'omnichannel', 'file exchange', 'scheduler', 'batch chain reports',
-                         'admin console', 'gt admin gateway', 'help', 'help sysops')
+    'application_menu': ('', 'dxc graphtalk', 'omnichannel', 'file exchange', 'scheduler', 'batch chain reports',
+                         'admin console', 'gt admin gateway', 'help', 'help sysops'),
+    'language': ('english', 'dutch', 'french')
 }
 
 # ===================================================== Locators =====================================================
@@ -96,7 +110,9 @@ login_password = 'input#password'
 login_button = '#kc-login'
 
 # Application menu
+iframe = '#iframe'
 application_menu_options_tuple = '#overview>div.row>div:nth-of-type(@index@)'
+language_options_tuple = '#oc-language-option-@index@'
 
 # Send to the back office page
 submit_documents_button = 'button#create-documents-button'
@@ -330,20 +346,49 @@ add_van_vehicle_details_page_referential_search_button = '#quote-risk-undefined-
 add_van_preferential_vehicle_search_page_make_input = add_car_preferential_vehicle_search_page_make_input
 add_van_preferential_vehicle_search_page_model_input = add_car_preferential_vehicle_search_page_model_input
 add_van_preferential_vehicle_search_page_search_button = add_car_preferential_vehicle_search_page_search_button
-add_van_vehicle_details_page_first_use_date_input = add_car_vehicle_details_page_first_use_date_input
-add_van_vehicle_details_page_number_of_seats_input = add_car_vehicle_details_page_number_of_seats_input
-add_van_vehicle_details_page_registration_number_input = add_car_vehicle_details_page_registration_number_input
-add_van_vehicle_details_page_chassis_number_input = add_car_vehicle_details_page_chassis_number_input
-add_van_vehicle_details_page_registration_type_options_tuple = add_car_vehicle_details_page_registration_type_options_tuple
-add_van_vehicle_details_page_fuel_type_options_tuple = add_car_vehicle_details_page_fuel_type_options_tuple
-add_van_vehicle_details_page_usage_type_options_tuple = add_car_vehicle_details_page_usage_type_options_tuple
-add_van_vehicle_details_page_next_button = add_car_vehicle_details_page_next_button
-add_van_risk_evaluation_page_vehicle_value_input = add_car_risk_evaluation_page_vehicle_value_input
-add_van_risk_evaluation_page_accessories_equipment_value_input = add_car_risk_evaluation_page_accessories_equipment_value_input
-add_van_risk_evaluation_page_next_button = add_car_risk_evaluation_page_next_button
-add_van_claim_history_page_add_claim_button = add_car_claim_history_page_add_claim_button
+add_van_vehicle_details_page_first_use_date_input = 'input#quote-risk-van-first-use-date-date_input'
+add_van_vehicle_details_page_number_of_seats_input = 'input#quote-risk-van-seats-positions-number'
+add_van_vehicle_details_page_registration_number_input = 'input#quote-risk-van-registration-number-text'
+add_van_vehicle_details_page_chassis_number_input = 'input#quote-risk-van-serial-number-text'
+
+add_van_vehicle_details_page_registration_type_options_tuple = (
+    'button[id="quote-risk-van-registration-type-toggle_Euro Plate_-button"]',
+    'button[id="quote-risk-van-registration-type-toggle_Normal Plate_-button"]',
+    'button[id="quote-risk-van-registration-type-toggle_BZ Plate_-button"]',
+    'button[id="quote-risk-van-registration-type-toggle_Trader Plate_-button"]',
+    'button[id="quote-risk-van-registration-type-toggle_Transit Plate_-button"]'
+)
+
+add_van_vehicle_details_page_fuel_type_options_tuple = (
+    'button[id="quote-risk-van-fuel-type-toggle_Diesel Oil_-button"]',
+    'button[id="quote-risk-van-fuel-type-toggle_Electric_-button"]',
+    'button[id="quote-risk-van-fuel-type-toggle_Hybrid (Diesel Oil / Electricity)_-button"]',
+    'button[id="quote-risk-van-fuel-type-toggle_Hybrid (Petrol / Electricity)_-button"]',
+    'button[id="quote-risk-van-fuel-type-toggle_Hydrogen_-button"]',
+    'button[id="quote-risk-van-fuel-type-toggle_LPG_-button"]',
+    'quote-risk-van-fuel-type-toggle_Natural Gas for Vehicles_-button',
+    'button[id="quote-risk-van-fuel-type-toggle_Petrol_-button"]',
+    'button[id="quote-risk-van-fuel-type-toggle_Unknown_-button"]'
+)
+
+add_van_vehicle_details_page_usage_type_options_tuple = (
+    'button[id="quote-risk-van-usage-type-toggle_Business Rounds_-button"]',
+    'button[id="quote-risk-van-usage-type-toggle_Craftsman_-button"]',
+    'button[id="quote-risk-van-usage-type-toggle_Private_-button"]',
+    'button[id="quote-risk-van-usage-type-toggle_Private - Business Journeys_-button"]',
+    'button[id="quote-risk-van-usage-type-toggle_Taxi_-button"]',
+    'button[id="quote-risk-van-usage-type-toggle_Transport of goods_-button"]',
+    'button[id="quote-risk-van-usage-type-toggle_Professional_-button"]'
+)
+
 add_van_add_claim_page_nature_dropdown = add_car_add_claim_page_nature_dropdown
-add_van_add_claim_page_nature_dropdown_tuple = add_car_add_claim_page_nature_dropdown_tuple
+add_van_add_claim_page_nature_dropdown_tuple = '#claim-history-property-recorded-claim-claim-type-select_@index@'
+
+add_van_vehicle_details_page_next_button = 'a#undefined-3-anchor'
+add_van_risk_evaluation_page_vehicle_value_input = 'input#quote-risk-van-sum-insured-number'
+add_van_risk_evaluation_page_accessories_equipment_value_input = 'input#quote-risk-van-accessoires-sum-number'
+add_van_risk_evaluation_page_next_button = 'a#undefined-4-anchor'
+add_van_claim_history_page_add_claim_button = add_car_claim_history_page_add_claim_button
 add_van_add_claim_page_date_input = add_car_add_claim_page_date_input
 add_van_add_claim_page_liability_dropdown = add_car_add_claim_page_liability_dropdown
 add_van_add_claim_page_liability_dropdown_tuple = add_car_add_claim_page_liability_dropdown_tuple
@@ -353,33 +398,29 @@ add_van_add_claim_page_driver_date_of_birth_input = add_car_add_claim_page_drive
 add_van_add_claim_page_joker_used_options_tuple = add_car_add_claim_page_joker_used_options_tuple
 add_van_add_claim_page_amount_input = add_car_add_claim_page_amount_input
 add_van_add_claim_page_risk_fully_repaired_options_tuple = add_car_add_claim_page_risk_fully_repaired_options_tuple
+add_van_risk_background_page_certificates_options_tuple = add_car_risk_background_page_certificates_options_tuple
 add_van_add_claim_page_ok_button = add_car_add_claim_page_ok_button
 add_van_claim_history_page_next_button = add_car_claim_history_page_next_button
 add_van_drivers_page_add_driver_button = add_car_drivers_page_add_driver_button
-add_van_add_driver_page_next_button = add_car_add_driver_page_next_button
+add_van_add_driver_page_next_button = 'a#undefined-2-anchor'
 add_van_add_driver_driver_license_page_license_date_input = add_car_add_driver_driver_license_page_license_date_input
 add_van_add_driver_driver_license_page_license_category_options_tuple = add_car_add_driver_driver_license_page_license_category_options_tuple
 add_van_add_driver_driver_license_page_next_button = add_car_add_driver_driver_license_page_next_button
 add_van_add_driver_address_page_next_button = add_car_add_driver_address_page_next_button
 add_van_add_driver_page_ok_button = add_car_add_driver_page_ok_button
 add_van_drivers_page_next_button = add_car_drivers_page_next_button
-add_van_risk_background_page_certificates_options_tuple = add_car_risk_background_page_certificates_options_tuple
 add_van_vehicle_details_page_make_input = add_old_timer_vehicle_details_page_make_input
 add_van_vehicle_details_page_model_input = add_old_timer_vehicle_details_page_model_input
 add_van_vehicle_details_page_version_input = add_old_timer_vehicle_details_page_version_input
 add_van_vehicle_details_page_power_input = add_old_timer_vehicle_details_page_power_input
-add_van_risk_background_page_certificates_next_button = add_old_timer_risk_background_page_next_button
-add_van_page_ok_button = add_old_timer_page_ok_button
+add_van_risk_background_page_certificates_next_button = 'a#undefined-8-anchor'
+add_van_page_ok_button = 'button#modal__ok'
 add_van_coverage_tariffs_page_options_tuple = add_car_coverage_tariffs_page_options_tuple
 add_van_add_driver_ok_button = add_old_timer_add_driver_page_ok_button
 add_van_risk_background_page_next_button = add_car_risk_background_page_next_button
 
-add_van_vehicle_details_page_vehicle_type_dropdown = '#quote-risk-automobile-type-select'
-add_van_vehicle_details_page_vehicle_type_dropdown_tuple = (
-    '#arg_minibus',
-    '#arg_passenger_car',
-    '#arg_station_wagon_all_terrain'
-)
+add_van_vehicle_details_page_vehicle_type_dropdown = '#quote-risk-van-type-select'
+add_van_vehicle_details_page_vehicle_type_dropdown_tuple = '#quote-risk-van-type-select_@index@'
 
 # Add Truck Camper
 add_truck_camper_button = 'button#add-campingcar-risk-undefined-button-modal'

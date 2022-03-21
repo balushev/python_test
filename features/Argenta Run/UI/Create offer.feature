@@ -215,8 +215,8 @@ Feature: Create Offer
     * Click "Risk acceptance answer" button
     * Click "Summary" button
     * Click "Submission" button
-#    * Wait for Offer congratulations message
-#    * Verify Offer congratulations message contains <verifyCongratulationsMessage> text
+    * Wait for Offer congratulations message
+    * Verify Offer congratulations message contains <verifyCongratulationsMessage> text
 
     Scenarios: Test data for Offer -> Car insurance (Add Old timer)
       | ownerID | vehicleMake | vehicleModel | vehicleVersion | vehicleType           | vehiclePower | firstUseDate | numberOfSeats | registrationNumber | chassisNumber | registrationType | fuelType | usageType | claimNature | claimDate  | claimLiability | claimDriverType | claimDriverDateOfBirth | claimJokerUsed | claimAmount | claimRiskFullyRepaired | licenseID | driverLicenseDate | driverLicenseCategory | certificates | coverageTariffs       | billingType   | billingFrequency | billingRenewalDay | billingRenewalMonth | verifyCongratulationsMessage |

@@ -55,8 +55,9 @@ options_area_lists = {
     'add_home_risk_evaluation_page_evaluation_method': ('gim', 'by questions', 'manual'),
     'add_family_add_home_risk_evaluation_page_evaluation_method': ('gim', 'by questions', 'manual'),
     'add_family_page_family_situation': ('family', '60 plus', 'single'),
-    'application_menu': ('dxc graphtalk', 'omnichannel', 'file exchange', 'scheduler', 'batch chain reports',
-                         'admin console', 'gt admin gateway', 'help', 'help sysops')
+    'application_menu': ('', 'dxc graphtalk', 'omnichannel', 'file exchange', 'scheduler', 'batch chain reports',
+                         'admin console', 'gt admin gateway', 'help', 'help sysops'),
+    'language': ('english', 'dutch', 'french')
 }
 
 # ===================================================== Locators =====================================================
@@ -68,7 +69,9 @@ login_password = 'input#password'
 login_button = '#kc-login'
 
 # Application menu
+iframe = '#iframe'
 application_menu_options_tuple = '#overview>div.row>div:nth-of-type(@index@)'
+language_options_tuple = '#oc-language-option-@index@'
 
 # Send to the back office page
 submit_documents_button = 'button#create-documents-button'
@@ -110,8 +113,8 @@ risk_button = 'button#risk-management-undefined-button'
 search_owner_button = '#search-owner-undefined-anchor'
 add_home_button = 'button#add-home-risk-undefined-button-modal'
 add_home_address_page_next_button = 'a#undefined-2-anchor'
-add_home_home_details_page_bedrooms_input = 'input#mat-input-32'
-add_home_home_details_page_bathrooms_input = 'input#mat-input-33'
+add_home_home_details_page_bedrooms_input = 'input#mat-input-33'
+add_home_home_details_page_bathrooms_input = 'input#mat-input-34'
 add_home_home_details_page_next_button = 'a#undefined-3-anchor'
 
 add_home_home_details_page_type_options_tuple = (
@@ -182,8 +185,8 @@ add_family_add_home_home_details_page_next_button = add_home_home_details_page_n
 add_family_add_home_home_details_page_type_options_tuple = add_home_home_details_page_type_options_tuple
 add_family_add_home_home_details_page_usage_options_tuple = add_home_home_details_page_usage_options_tuple
 
-add_family_add_home_home_details_page_bedrooms_input = 'input#mat-input-51'
-add_family_add_home_home_details_page_bathrooms_input = 'input#mat-input-52'
+add_family_add_home_home_details_page_bedrooms_input = 'input#mat-input-50'
+add_family_add_home_home_details_page_bathrooms_input = 'input#mat-input-51'
 
 add_family_add_home_home_details_page_alarm_system_options_tuple = add_home_home_details_page_alarm_system_options_tuple
 add_family_add_home_home_details_page_classified_property_options_tuple = add_home_home_details_page_classified_property_options_tuple
