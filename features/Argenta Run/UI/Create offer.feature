@@ -149,7 +149,7 @@ Feature: Create Offer
     * Verify Offer congratulations message contains "Your proposition with number" text
 
 
-#  @test
+  @test
   Scenario Template: Create a Offer for Car insurance (Add Old timer)
   """ This UI scenario testing creation of a offer for Car insurance (Add Old timer) """
 
@@ -220,8 +220,8 @@ Feature: Create Offer
 
     Scenarios: Test data for Offer -> Car insurance (Add Old timer)
       | ownerID | vehicleMake | vehicleModel | vehicleVersion | vehicleType           | vehiclePower | firstUseDate | numberOfSeats | registrationNumber | chassisNumber | registrationType | fuelType | usageType | claimNature | claimDate  | claimLiability | claimDriverType | claimDriverDateOfBirth | claimJokerUsed | claimAmount | claimRiskFullyRepaired | licenseID | driverLicenseDate | driverLicenseCategory | certificates | coverageTariffs       | billingType   | billingFrequency | billingRenewalDay | billingRenewalMonth | verifyCongratulationsMessage |
-      | 3083383 | Rolls Royce | Phantom      | 5              | Old timer private car | 100          | 09/09/1990   | 5             | O1111CA            | 11183765      | Normal Plate     | Electric | Private   | Accident    | 08/08/2018 | 0 percent      | Primary         | 08/08/1980             | Yes            | 3000        | No                     | 74898744  | 12/02/2019        | B                     | No           | Legal assistance safe | Direct credit | Annual           | 18                | 3                   | Your proposition with number |
-      | 3083383 | Jaguar      | E-Type       | do not execute | Old timer private car | 100          | 09/09/1990   | 5             | O1111CA            | 11183765      | Normal Plate     | Electric | Private   | Accident    | 08/08/2018 | 0 percent      | Primary         | 08/08/1980             | Yes            | 3000        | No                     | 74898744  | 12/02/2019        | B                     | No           | Legal assistance safe | Direct credit | Annual           | 18                | 3                   | some text                    |
+      | 3083383 | Rolls Royce | Phantom      | 5              | Old timer private car | 100          | 09/09/1990   | 5             | O1111CA            | 11183765      | Normal Plate     | Electric | Private   | Accident    | 08/08/2018 | 0 percent      | Primary         | 08/08/1980             | Yes            | 3000        | No                     | 74898744  | 12/02/2019        | B                     | No           | Legal assistance safe | Direct credit | Annual           | do not execute    | do not execute      | Your proposition with number |
+      | 3083383 | Jaguar      | E-Type       | do not execute | Old timer private car | 100          | 09/09/1990   | 5             | O1111CA            | 11183765      | Normal Plate     | Electric | Private   | Accident    | 08/08/2018 | 0 percent      | Primary         | 08/08/1980             | Yes            | 3000        | No                     | 74898744  | 12/02/2019        | B                     | No           | Legal assistance safe | Direct credit | Annual           | do not execute    | do not execute      | some text                    |
 
 
 #  @test
@@ -299,7 +299,7 @@ Feature: Create Offer
 
     Scenarios: Test data for Offer -> Car insurance (Add Van)
       | ownerID | vehicleMake | vehicleModel | vehicleType                          | firstUseDate | numberOfSeats | registrationNumber | chassisNumber | registrationType | fuelType | usageType | claimNature | claimDate  | claimLiability | claimDriverType | claimDriverDateOfBirth | claimJokerUsed | claimAmount | claimRiskFullyRepaired | licenseID | driverlicenseDate | driverlicenseCategory | certificates | coverageTariffs       | billingType   | billingFrequency | billingRenewalDay | billingRenewalMonth | vehicleValue | accessoriesEquipmentValue |
-      | 3083383 | Peugeot     | Traveller    | Station wagon or All-terrain vehicle | 09/09/1990   | 8             | O1111CA            | 11183765      | Normal Plate     | Electric | Private   | Accident    | 08/08/2018 | 0 percent      | Primary         | 08/08/1980             | Yes            | 3000        | No                     | 74898744  | 12/02/2019        | B                     | No           | Legal assistance safe | Direct credit | Annual           | 18                | 3                   | 45000        | 3500                      |
+      | 3083383 | Peugeot     | Traveller    | Station wagon or All-terrain vehicle | 09/09/1990   | 8             | O1111CA            | 11183765      | Normal Plate     | Electric | Private   | Accident    | 08/08/2018 | 0 percent      | Primary         | 08/08/1980             | Yes            | 3000        | No                     | 74898744  | 12/02/2019        | B                     | No           | Legal assistance safe | Direct credit | Annual           | do not execute    | do not execute      | 45000        | 3500                      |
 
 
 #  @test
@@ -375,7 +375,7 @@ Feature: Create Offer
 
     Scenarios: Test data for Offer -> Car insurance (Add Truck Camper)
       | ownerID | vehicleMake   | vehicleModel   | vehicleType | vehiclePower | firstUseDate | numberOfSeats | registrationNumber | chassisNumber | registrationType | fuelType | usageType | vehicleValue | accessoriesEquipment | claimNature | claimDate  | claimLiability | claimDriverType | claimDriverDateOfBirth | claimJokerUsed | claimAmount | claimRiskFullyRepaired | licenseID | driverlicenseDate | driverlicenseCategory | certificates | coverageTariffs    | billingType   | billingFrequency | billingRenewalDay | billingRenewalMonth |
-      | 3083383 | Mercedes-Benz | Grand Canyon S | Camping car | 100          | 09/09/1990   | 5             | O1111CA            | 11183765      | Normal Plate     | Electric | Private   | 75000        | 7500                 | Accident    | 08/08/2018 | 0 percent      | Primary         | 08/08/1980             | Yes            | 3000        | No                     | 74898744  | 12/02/2019        | B                     | No           | Own damage comfort | Direct credit | Annual           | 18                | 3                   |
+      | 3083383 | Mercedes-Benz | Grand Canyon S | Camping car | 100          | 09/09/1990   | 5             | O1111CA            | 11183765      | Normal Plate     | Electric | Private   | 75000        | 7500                 | Accident    | 08/08/2018 | 0 percent      | Primary         | 08/08/1980             | Yes            | 3000        | No                     | 74898744  | 12/02/2019        | B                     | No           | Own damage comfort | Direct credit | Annual           | do not execute    | do not execute      |
 
 
 #  @test

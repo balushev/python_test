@@ -17,7 +17,7 @@ from pydoc import locate
 
 
 class Web(object):
-    __TIMEOUT = 15
+    __TIMEOUT = 30
     resource_name_for_locators = ''
 
     # ================================ Initialization method ================================
