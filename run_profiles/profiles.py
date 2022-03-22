@@ -8,7 +8,7 @@ Created on Mon Jan 17 08:48:27 2022
 
 profile = {
 
-    'LCT_1': {
+    'AIA-ARGENTA-DEV-LCT': {
         'default': {
             'UI_URL': 'https://www.lct.argenta-dxc-graphtalk-insurance.com/',
             'API_URL': 'http://20.33.40.95:13211/csc/insurance',
@@ -19,7 +19,7 @@ profile = {
         }
     },
 
-    'LCT_2': {
+    'AIA-ARGENTA-DEV-LCT2': {
         'default': {
             'UI_URL': 'https://gtk.lct2.argenta-test.assure.dxc.com/',
             'API_URL': 'http://20.33.40.95:13213/csc/insurance',
@@ -30,7 +30,7 @@ profile = {
         }
     },
 
-    'UAT': {
+    'AIA-ARGENTA-DEV-UAT': {
         'default': {
             'UI_URL': 'https://www.uat.argenta-dxc-graphtalk-insurance.com/index.php',
             'API_URL': 'http://20.33.40.95:13213/csc/insurance',
@@ -41,7 +41,7 @@ profile = {
         }
     },
 
-    'VAL': {
+    'AIA-ARGENTA-DEV-VAL': {
         'default': {
             'UI_URL': 'https://www.val.argenta-dxc-graphtalk-insurance.com/',
             'API_URL': 'http://20.33.40.95:13213/csc/insurance',
@@ -52,7 +52,7 @@ profile = {
         }
     },
 
-    'SIM': {
+    'AIA-ARGENTA-DEV-SIM': {
         'default': {
             'UI_URL': 'https://www.sim.argenta-dxc-graphtalk-insurance.com/',
             'API_URL': 'http://20.33.40.95:13213/csc/insurance',
