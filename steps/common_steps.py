@@ -111,21 +111,27 @@ def step_impl(context: object, element: str) -> None:
 
 @step(u'Verify {element} contains {text} text')
 def step_impl(context: object, element: str, text: str) -> None:
-    context.web.verify_element_not_present(locator='loading_page_element')
-    if re.match(u'\[(.*?)\]', text):
-        marker_list = text.replace('[', '').replace(']', '').replace('"', '').split(',')
-        for marker in marker_list:
-            for recorded_parameter in context.records_dict[marker]:
-                context.web.verify_element_text(locator=step_name_convertor(element), text=recorded_parameter.replace('"', ''), contains_in_text=True)
-
+    if 'do not execute' in text:
+        pass
     else:
-        context.web.verify_element_text(locator=step_name_convertor(element), text=text.replace('"', ''), contains_in_text=True)
+        context.web.verify_element_not_present(locator='loading_page_element')
+        if re.match(u'\[(.*?)\]', text):
+            marker_list = text.replace('[', '').replace(']', '').replace('"', '').split(',')
+            for marker in marker_list:
+                for recorded_parameter in context.records_dict[marker]:
+                    context.web.verify_element_text(locator=step_name_convertor(element), text=recorded_parameter.replace('"', ''), contains_in_text=True)
+
+        else:
+            context.web.verify_element_text(locator=step_name_convertor(element), text=text.replace('"', ''), contains_in_text=True)
 
 
 @step(u'Verify {element} have {text} text')
 def step_impl(context: object, element: str, text: str) -> None:
-    context.web.verify_element_not_present(locator='loading_page_element')
-    context.web.verify_element_text(locator=step_name_convertor(element), text=text.replace('"', ''))
+    if 'do not execute' in text:
+        pass
+    else:
+        context.web.verify_element_not_present(locator='loading_page_element')
+        context.web.verify_element_text(locator=step_name_convertor(element), text=text.replace('"', ''))
 
 
 @step(u'Pause for {number_str} seconds')

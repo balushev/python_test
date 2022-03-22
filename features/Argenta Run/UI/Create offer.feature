@@ -10,6 +10,7 @@ Feature: Create Offer
     * Log in to the application
     * Switch to the iframe
     * Choose Omnichannel for Application menu options area
+    * Pause for 3 seconds
     * Choose English for language options area
     * Choose Home insurance for Offer drop-down menu
     * Select a distributor with id 3588
@@ -44,6 +45,7 @@ Feature: Create Offer
     * Log in to the application
     * Switch to the iframe
     * Choose Omnichannel for Application menu options area
+    * Pause for 3 seconds
     * Choose English for language options area
     * Choose Home insurance for Offer drop-down menu
     * Select a distributor with id 3588
@@ -83,6 +85,7 @@ Feature: Create Offer
     * Log in to the application
     * Switch to the iframe
     * Choose Omnichannel for Application menu options area
+    * Pause for 3 seconds
     * Choose English for language options area
     * Choose Car insurance for Offer drop-down menu
     * Select a distributor with id 3588
@@ -139,8 +142,6 @@ Feature: Create Offer
     * Click "Billing" button
     * Choose Direct credit for Billing page => "Type" options area
     * Choose Annual for Billing page => "Frequency" options area
-    * Fill 18 in Billing page => "Renewal day" field
-    * Fill 3 in Billing page => "Renewal month" field
     * Click "Risk acceptance" button
     * Click "Risk acceptance answer" button
     * Click "Summary" button
@@ -149,7 +150,7 @@ Feature: Create Offer
     * Verify Offer congratulations message contains "Your proposition with number" text
 
 
-  @test
+#  @test
   Scenario Template: Create a Offer for Car insurance (Add Old timer)
   """ This UI scenario testing creation of a offer for Car insurance (Add Old timer) """
 
@@ -157,6 +158,7 @@ Feature: Create Offer
     * Log in to the application
     * Switch to the iframe
     * Choose Omnichannel for Application menu options area
+    * Pause for 3 seconds
     * Choose English for language options area
     * Choose Car insurance for Offer drop-down menu
     * Select a distributor with id 3588
@@ -221,7 +223,7 @@ Feature: Create Offer
     Scenarios: Test data for Offer -> Car insurance (Add Old timer)
       | ownerID | vehicleMake | vehicleModel | vehicleVersion | vehicleType           | vehiclePower | firstUseDate | numberOfSeats | registrationNumber | chassisNumber | registrationType | fuelType | usageType | claimNature | claimDate  | claimLiability | claimDriverType | claimDriverDateOfBirth | claimJokerUsed | claimAmount | claimRiskFullyRepaired | licenseID | driverLicenseDate | driverLicenseCategory | certificates | coverageTariffs       | billingType   | billingFrequency | billingRenewalDay | billingRenewalMonth | verifyCongratulationsMessage |
       | 3083383 | Rolls Royce | Phantom      | 5              | Old timer private car | 100          | 09/09/1990   | 5             | O1111CA            | 11183765      | Normal Plate     | Electric | Private   | Accident    | 08/08/2018 | 0 percent      | Primary         | 08/08/1980             | Yes            | 3000        | No                     | 74898744  | 12/02/2019        | B                     | No           | Legal assistance safe | Direct credit | Annual           | do not execute    | do not execute      | Your proposition with number |
-      | 3083383 | Jaguar      | E-Type       | do not execute | Old timer private car | 100          | 09/09/1990   | 5             | O1111CA            | 11183765      | Normal Plate     | Electric | Private   | Accident    | 08/08/2018 | 0 percent      | Primary         | 08/08/1980             | Yes            | 3000        | No                     | 74898744  | 12/02/2019        | B                     | No           | Legal assistance safe | Direct credit | Annual           | do not execute    | do not execute      | some text                    |
+      | 3083383 | Jaguar      | E-Type       | do not execute | Old timer private car | 100          | 09/09/1990   | 5             | O1111CA            | 11183765      | Normal Plate     | Electric | Private   | Accident    | 08/08/2018 | 0 percent      | Primary         | 08/08/1980             | Yes            | 3000        | No                     | 74898744  | 12/02/2019        | B                     | No           | Legal assistance safe | Direct credit | Annual           | do not execute    | do not execute      | do not execute               |
 
 
 #  @test
@@ -232,6 +234,7 @@ Feature: Create Offer
     * Log in to the application
     * Switch to the iframe
     * Choose Omnichannel for Application menu options area
+    * Pause for 3 seconds
     * Choose English for language options area
     * Choose Car insurance for Offer drop-down menu
     * Select a distributor with id 3588
@@ -310,6 +313,7 @@ Feature: Create Offer
     * Log in to the application
     * Switch to the iframe
     * Choose Omnichannel for Application menu options area
+    * Pause for 3 seconds
     * Choose English for language options area
     * Choose Car insurance for Offer drop-down menu
     * Select a distributor with id 3588
@@ -386,6 +390,7 @@ Feature: Create Offer
     * Log in to the application
     * Switch to the iframe
     * Choose Omnichannel for Application menu options area
+    * Pause for 3 seconds
     * Choose English for language options area
     * Choose Family insurance for Offer drop-down menu
     * Select a distributor with id 3588
@@ -419,6 +424,7 @@ Feature: Create Offer
     * Log in to the application
     * Switch to the iframe
     * Choose Omnichannel for Application menu options area
+    * Pause for 3 seconds
     * Choose English for language options area
     * Choose Motorcycle insurance for Offer drop-down menu
     * Select a distributor with id 3588
@@ -463,8 +469,6 @@ Feature: Create Offer
     * Click "Billing" button
     * Choose Direct credit for Billing page => "Type" options area
     * Choose Annual for Billing page => "Frequency" options area
-    * Fill 18 in Billing page => "Renewal day" field
-    * Fill 3 in Billing page => "Renewal month" field
     * Click "Risk acceptance" button
     * Click Add motorcycle => Risk acceptance page => "Answer No" button
     * Click "Summary" button
@@ -473,7 +477,7 @@ Feature: Create Offer
     * Verify Offer congratulations message contains "Your proposition with number" text
 
 
-#  @test
+  @test
   Scenario: Create a Offer for Motorcycle insurance (Add Moped)
   """ This UI scenario testing creation of a offer for Motorcycle insurance (Add Moped) """
 
@@ -481,6 +485,7 @@ Feature: Create Offer
     * Log in to the application
     * Switch to the iframe
     * Choose Omnichannel for Application menu options area
+    * Pause for 3 seconds
     * Choose English for language options area
     * Choose Motorcycle insurance for Offer drop-down menu
     * Select a distributor with id 3588
@@ -525,8 +530,6 @@ Feature: Create Offer
     * Click "Billing" button
     * Choose Direct credit for Billing page => "Type" options area
     * Choose Annual for Billing page => "Frequency" options area
-    * Fill 18 in Billing page => Renewal day field
-    * Fill 3 in Billing page => Renewal month field
     * Click "Risk acceptance" button
     * Click Add moped => Risk acceptance page => "Answer No" button
     * Click "Summary" button

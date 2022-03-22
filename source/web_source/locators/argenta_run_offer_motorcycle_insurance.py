@@ -124,8 +124,6 @@ risk_acceptance_answer_button = 'button#ques-ans-item-question-answer-answer-boo
 
 
 # Add Motorcycle
-search_owner_page_first_name_input = 'input#person-search-first-name-text'
-search_owner_page_search_button = 'button#btnfilter'
 add_motorcycle_button = 'button#add-motorcycle-risk-undefined-button-modal'
 add_motorcycle_vehicle_details_page_make_input = 'input#quote-risk-motorcycle-make-text'
 add_motorcycle_vehicle_details_page_model_input = 'input#quote-risk-motorcycle-model-text'

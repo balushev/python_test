@@ -101,8 +101,6 @@ submission_button = 'button#submission-undefined-button'
 risk_acceptance_answer_button = 'button#ques-ans-item-question-answer-answer-boolean-toggle__FALSE_05-button'
 
 # Family
-search_owner_page_first_name_input = 'input#person-search-first-name-text'
-search_owner_page_search_button = 'button#btnfilter'
 add_family_button = 'button#add-family-risk-undefined-button-modal'
 add_family_page_ok_button = 'button#modal__ok'
 coverage_tariffs_button = 'button#coverages-tariffs-undefined-button'
