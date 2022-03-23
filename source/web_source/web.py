@@ -222,7 +222,7 @@ class Web(object):
 
        """
 
-        time.sleep(0.05)
+        time.sleep(1)
         web_driver_wait = WebDriverWait(self._web_driver, timeout)
 
         if vendor != '':
