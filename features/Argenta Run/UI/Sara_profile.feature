@@ -9,7 +9,7 @@ Feature: profile 1
     * Log in to the application
     * Switch to the iframe
     * Choose Omnichannel for Application menu options area
-    * Pause for 3 seconds
+    * Pause for 5 seconds
     * Choose English for language options area
     * Choose Car insurance for Quote drop-down menu
     * Select a distributor with id 3588

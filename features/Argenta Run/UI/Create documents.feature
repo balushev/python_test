@@ -10,6 +10,6 @@ Feature: Create Documents
     * Log in to the application
     * Switch to the iframe
     * Choose Omnichannel for Application menu options area
-    * Pause for 3 seconds
+    * Pause for 5 seconds
     * Choose English for language options area
     * Choose Home insurance for Documents drop-down menu

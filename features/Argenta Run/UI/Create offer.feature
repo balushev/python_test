@@ -10,7 +10,7 @@ Feature: Create Offer
     * Log in to the application
     * Switch to the iframe
     * Choose Omnichannel for Application menu options area
-    * Pause for 3 seconds
+    * Pause for 5 seconds
     * Choose English for language options area
     * Choose Home insurance for Offer drop-down menu
     * Select a distributor with id 3588
@@ -45,7 +45,7 @@ Feature: Create Offer
     * Log in to the application
     * Switch to the iframe
     * Choose Omnichannel for Application menu options area
-    * Pause for 3 seconds
+    * Pause for 5 seconds
     * Choose English for language options area
     * Choose Home insurance for Offer drop-down menu
     * Select a distributor with id 3588
@@ -85,7 +85,7 @@ Feature: Create Offer
     * Log in to the application
     * Switch to the iframe
     * Choose Omnichannel for Application menu options area
-    * Pause for 3 seconds
+    * Pause for 5 seconds
     * Choose English for language options area
     * Choose Car insurance for Offer drop-down menu
     * Select a distributor with id 3588
@@ -158,7 +158,7 @@ Feature: Create Offer
     * Log in to the application
     * Switch to the iframe
     * Choose Omnichannel for Application menu options area
-    * Pause for 3 seconds
+    * Pause for 5 seconds
     * Choose English for language options area
     * Choose Car insurance for Offer drop-down menu
     * Select a distributor with id 3588
@@ -234,7 +234,7 @@ Feature: Create Offer
     * Log in to the application
     * Switch to the iframe
     * Choose Omnichannel for Application menu options area
-    * Pause for 3 seconds
+    * Pause for 5 seconds
     * Choose English for language options area
     * Choose Car insurance for Offer drop-down menu
     * Select a distributor with id 3588
@@ -313,7 +313,7 @@ Feature: Create Offer
     * Log in to the application
     * Switch to the iframe
     * Choose Omnichannel for Application menu options area
-    * Pause for 3 seconds
+    * Pause for 5 seconds
     * Choose English for language options area
     * Choose Car insurance for Offer drop-down menu
     * Select a distributor with id 3588
@@ -390,7 +390,7 @@ Feature: Create Offer
     * Log in to the application
     * Switch to the iframe
     * Choose Omnichannel for Application menu options area
-    * Pause for 3 seconds
+    * Pause for 5 seconds
     * Choose English for language options area
     * Choose Family insurance for Offer drop-down menu
     * Select a distributor with id 3588
@@ -424,7 +424,7 @@ Feature: Create Offer
     * Log in to the application
     * Switch to the iframe
     * Choose Omnichannel for Application menu options area
-    * Pause for 3 seconds
+    * Pause for 5 seconds
     * Choose English for language options area
     * Choose Motorcycle insurance for Offer drop-down menu
     * Select a distributor with id 3588
@@ -485,7 +485,7 @@ Feature: Create Offer
     * Log in to the application
     * Switch to the iframe
     * Choose Omnichannel for Application menu options area
-    * Pause for 3 seconds
+    * Pause for 5 seconds
     * Choose English for language options area
     * Choose Motorcycle insurance for Offer drop-down menu
     * Select a distributor with id 3588
